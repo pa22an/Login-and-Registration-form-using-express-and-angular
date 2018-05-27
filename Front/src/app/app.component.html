@@ -1,0 +1,40 @@
+<div class="form-control" style= "background-color:#1a3364">
+     
+<nav class="form-control navbar navbar-expand-lg navbar-dark bg-dark" style= "background-color:#1a3364">
+  <a class="navbar-brand" href="#">Welcome</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown" style="text-align: end">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link btn btn-outline-secondary" [routerLink]="['/user']" >Home <span class="sr-only">(current)</span></a>
+      </li>
+       <!--div class="d-flex"--> 
+      <li class="nav-item dropdown" style="position:absolute; right:20px"> 
+        <a class="nav-link dropdown-toggle btn btn-outline-secondary" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          ForLogin/Register
+        </a>
+        <div class="dropdown-menu"  aria-labelledby="navbarDropdownMenuLink" >
+          <a class="dropdown-item btn btn-outline-secondary" [routerLink]="['/register']">Register</a>
+          <a class="dropdown-item btn btn-outline-secondary"  [routerLink]="['/login']" >Login</a>
+          <!-- <a class="dropdown-item" href="#">Something else here</a> -->
+        </div>
+      </li>
+      <!-- </div> -->
+    </ul>
+    <!--form class="form-inline my-2 my-lg-0">
+      <input class="form-control sr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class=" mbtn btn-outline-successy-2 my-sm-0" type="submit">Search</button>
+    </form-->
+  </div>
+</nav>
+
+<div class="form-control" style= "margin-right:120px; padding:185px;background-color: #1a3364" >
+  <div class="row">
+      <div class="col-md-6 offset-md-3">
+          <router-outlet></router-outlet>
+      </div>
+  </div>
+</div>
+</div>
